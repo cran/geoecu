@@ -1,0 +1,38 @@
+Package: geoecu
+Type: Package
+Title: Maps of the Provinces, Cantons and Parishes of Ecuador (Mapas de
+        Provincias, Cantones y Parroquias del Ecuador)
+Version: 0.3.0
+Authors@R: 
+    person("Ronald Fabricio", "Salas Guerrero",
+           email = "fabriciosalasguerrero@gmail.com",
+           role = c("aut", "cre", "cph"))
+Description: Provides the boundaries of the provinces, cantons and parishes
+    of Ecuador as 'sf' objects, identified by the codes of the national
+    political-administrative division (DPA, "División Político-Administrativa"),
+    ready to be mapped and joined with health, epidemiological surveillance or
+    other data. The three levels nest exactly and are offered in two
+    resolutions: a light one for maps and dashboards and a detailed one for
+    spatial analysis. The layers are derived from the free-access cartography
+    of the Geographic Military Institute of Ecuador (IGM)
+    <https://www.geoportaligm.gob.ec/portal/>, are downloaded on first use as
+    'GeoPackage' files and cached locally. Includes a catalogue of DPA codes,
+    helpers to clean codes and place names, and tools to relocate the
+    Galapagos Islands in national maps. Documentation is in Spanish.
+License: MIT + file LICENSE
+URL: https://github.com/f-slg/geoecu
+BugReports: https://github.com/f-slg/geoecu/issues
+Depends: R (>= 4.1.0)
+Imports: sf, stats, tools, utils
+Suggests: ggplot2, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: es
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2026-10-14 00:07:35 UTC; fabriciosalas
+Author: Ronald Fabricio Salas Guerrero [aut, cre, cph]
+Maintainer: Ronald Fabricio Salas Guerrero <fabriciosalasguerrero@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-10-22 11:30:02 UTC
